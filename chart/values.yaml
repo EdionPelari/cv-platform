@@ -1,0 +1,14 @@
+replicaCount: 2
+
+image:
+  repository: cv-app
+  tag: v1.0.0
+  pullPolicy: Never
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  host: cv.local
